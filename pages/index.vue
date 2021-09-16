@@ -1,14 +1,16 @@
 
 <template>
     <div>
-      <Navigation>
+      <div class="menu-geral">
+        <Navigation>
         <ul class="menu">
-          <li class="item"><NuxtLink to="/">Pagina Inicial</NuxtLink></li>
-          <li class="item"><NuxtLink to="/sobreNos">Sobre Nós</NuxtLink></li>
-          <li class="item"><NuxtLink to="/faleConnosco">Fale Connosco</NuxtLink></li>
-          <li class="item"><NuxtLink to="/contactos">Contactos</NuxtLink></li>
+          <li class="item"><NuxtLink class="menu-item" to="/">HOME</NuxtLink></li>
+          <li class="item"><NuxtLink class="menu-item" to="/sobreNos">SOBRE NÓS</NuxtLink></li>
+          <li class="item"><NuxtLink class="menu-item" to="/faleConnosco">FALE CONNOSCO</NuxtLink></li>
+          <li class="item"><NuxtLink class="menu-item" to="/contactos">CONTACTOS</NuxtLink></li>
         </ul>
       </Navigation>
+      </div>
       <h1>Hello Nuxters! 👋</h1>
       <p>
         This page is rendered on the <strong>{{ rendering }}</strong>
@@ -29,10 +31,24 @@
 <style>
   .item{
     display: inline-block;
-    text-decoration: none;
-    font-family: 16pt;
     padding: 8px;
-    background-color: blue;
+    color: grey;
+    margin-right: 20px;
+  }
+  .menu-geral{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    font-family: sans-serif;
+  }
+  .menu-item{
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+  }
+  .menu{
+    padding: 8;
   }
 </style>
 
